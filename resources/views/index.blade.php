@@ -12,7 +12,7 @@
 <body>
     <div class="container mx-auto p-4">
         <div class="flex justify-center items-center">
-            <h1 class="text-2xl font-bold mb-4">Call API Laravel!</h1>
+            <h1 class="text-2xl font-bold mb-4">Call API Laravel! POST</h1>
         </div>
 
         <div class="flex p-5 bg-gray-200 rounded-lg mb-2">

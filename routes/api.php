@@ -27,5 +27,5 @@ Route::patch('users/{id}', [UserController::class, 'patchUpdate']);
 // api
 Route::controller(APIcontroller::class)->group(function () {
     Route::get('/fetch-posts', 'fetchAPI');
-
+    Route::get('/avatar', 'fetchAPI_avatar');
 });

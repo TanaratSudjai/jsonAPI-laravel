@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 Route::get('/index', [APIcontroller::class, 'fetchAPI']);
 Route::get('/index/{id}', [APIcontroller::class, 'fetchAPI_ForID']);
+Route::get('/avatar', [APIcontroller::class, 'fetchAPI_avatar']);
+
+

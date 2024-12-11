@@ -31,4 +31,15 @@ class APIcontroller extends Controller
         }
         return response()->json(['error' => 'Failed to fetch posts'], $response->status());
     }
+
+
+    public function fetchAPI_avatar()
+    {
+        $response = Http::get('https://reqres.in/api/users');
+        $data = $response->json();
+        if ($response->successful()) {
+            return view('avatar', compact('data'));
+        }
+        return response()->json(['error' => 'Failed to fetch posts'], $response->status());
+    }
 }
